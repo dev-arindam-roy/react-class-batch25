@@ -1,0 +1,12 @@
+REACT (Frontend JS Framework / lib) (FACEBOOK)
+================================================
+
+1. HTML with CSS & Javascript
+2. ES6 (Javascript extended version)
+3. Typescript (Superset of javascript)
+
+4. Booststrap (Design // CSS ==> lib)
+
+5. Node js (Express framework)
+
+6. React Js
