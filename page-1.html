@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>React-Class-Page 1</title>
+        <style>
+            body {
+                background-color: azure;
+            }
+            .box {
+                width: 600px;
+                height: auto;
+                margin: 30px auto;
+                background-color: bisque;
+                padding: 15px;
+                border: 2px solid #ee0707;
+                border-radius: 15px;
+                box-shadow: 0px 0px 10px #000;
+            }
+            .form-heading {
+                text-align: center;
+                color: #ee0707;
+                text-shadow: 1px 1px 2px #000;
+            }
+            .txtb {
+                width: 400px;
+                padding: 8px;
+                border: 1px solid #c406ba;
+            }
+            label em {
+                color: #ee0707;
+            }
+            .group {
+                margin-bottom: 15px;
+            }
+            .btn {
+                width: 400px;
+                padding: 10px;
+                text-align: center;
+                background-color: blue;
+                color: yellow;
+                border: 1px solid #000;
+                font-size: 16px;
+            }
+            .btn:hover {
+                background-color: #c406ba;
+                color: #fcfbfb;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1 class="form-heading">Please fill-up the form below!!</h1>
+            <hr/>
+            <form>
+                <div class="group">
+                    <label>First Name: <em>*</em></label><br/>
+                    <input type="text" class="txtb" placeholder="Enter your first name" />
+                </div>
+                <div class="group">
+                    <label>Last Name: <em>*</em></label><br/>
+                    <input type="text" class="txtb" placeholder="Enter your last name" />
+                </div>
+                <div class="group">
+                    <label>Email Id: <em>*</em></label><br/>
+                    <input type="email" class="txtb" placeholder="Enter your email" />
+                </div>
+                <div class="group">
+                    <label>Phone Number: <em>*</em></label><br/>
+                    <input type="tel" class="txtb" placeholder="Enter your phone number" />
+                </div>
+                <div class="group">
+                    <label>Date of Birth: <em>*</em></label><br/>
+                    <input type="date" class="txtb" placeholder="Enter your DOB" />
+                </div>
+                <div class="group">
+                    <label>Address: <em>*</em></label><br/>
+                    <textarea placeholder="Enter your adress.." class="txtb"></textarea>
+                </div>
+                <div class="group">
+                    <label>Sex:</label><br/>
+                    <input type="radio" name="sex" value="Male">Male
+                    <input type="radio" name="sex" value="Female">Female
+                    <input type="radio" name="sex" value="Others">Others
+                </div>
+                <div class="group">
+                    <label>Language:</label><br/>
+                    <input type="checkbox" name="lang" value="Eng">English
+                    <input type="checkbox" name="lang" value="Ben">Bengali
+                    <input type="checkbox" name="lang" value="Hin">Hindi
+                    <input type="checkbox" name="lang" value="Tam">Tamil
+                </div>
+                <div class="group">
+                    <label>City:</label><br/>
+                    <select class="txtb">
+                        <option>-Select City-</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Karala</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label>Upload Image:</label><br/>
+                    <input type="file" class="txtb" />
+                </div>
+                <div class="group">
+                    <button type="submit" class="btn">Sumit The Form</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
