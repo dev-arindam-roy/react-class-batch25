@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Page-5</title>
+
+    </head>
+    <body>
+
+        <p>
+            Number 1:
+            <input type="number" id="num1">
+        </p>
+
+        <p>
+            Number 2:
+            <input type="number" id="num2">
+        </p>
+
+        <p>
+            Operation: 
+            <select id="operation">
+                <option value="add">ADD (+)</option>
+                <option value="sub">SUB (-)</option>
+                <option value="mul">MUL (x)</option>
+                <option value="div">DIV (/)</option>
+            </select>
+        </p>
+
+        <p>
+            Result
+            <input type="text" id="res">
+        </p>
+
+        <p>
+            <button type="button" id="btn" onclick="calMe();">Get Result</button>
+        </p>
+
+        <script>
+            
+            function calMe() {
+                let _num1 = parseFloat(document.getElementById('num1').value);
+                let _num2 = parseFloat(document.getElementById('num2').value);
+                let _op = document.getElementById('operation').value;
+
+                let res = "";
+                
+                if (_op == "add") {
+                    res = _num1 + _num2;
+                }
+
+                if (_op == "sub") {
+                    res = _num1 - _num2;
+                }
+
+                if (_op == "mul") {
+                    res = _num1 * _num2;
+                }
+
+                if (_op == "div") {
+                    res = _num1 / _num2;
+                }
+
+                document.getElementById('res').value = res.toFixed(2);
+            }
+       
+        </script>
+    </body>
+</html>

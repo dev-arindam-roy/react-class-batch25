@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Page-7</title>
+
+    </head>
+    <body>
+
+        <p>
+            Number Table
+            <input type="number" id="num1">
+        </p>
+
+        <div id="result"></div>
+
+        <p>
+            <button type="button" id="btn" onclick="calMe();">Get Result</button>
+        </p>
+
+        <script>
+            
+          function calMe() {
+
+            let num = parseInt(document.getElementById('num1').value);
+
+            for(let i = 1; i <= 25; i++) {
+                var res = num * i;
+                document.getElementById("result").innerHTML += "<hr/>" + num + 'x' + i + '=' + res + '<br/>';
+
+            }
+
+            //printf("%d x %d = %d", num, i, res);
+          }
+        
+       
+        </script>
+    </body>
+</html>
