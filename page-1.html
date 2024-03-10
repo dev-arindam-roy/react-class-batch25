@@ -32,18 +32,35 @@
                 margin-bottom: 15px;
             }
             .btn {
-                width: 400px;
+                width: 200px;
                 padding: 10px;
                 text-align: center;
                 background-color: blue;
                 color: yellow;
                 border: 1px solid #000;
                 font-size: 16px;
+                float: left;
+            }
+            .btn-reset {
+                width: 200px;
+                padding: 10px;
+                text-align: center;
+                background-color: blue;
+                color: yellow;
+                border: 1px solid #000;
+                font-size: 16px;
+                float: left;
             }
             .btn:hover {
                 background-color: #c406ba;
                 color: #fcfbfb;
                 cursor: pointer;
+            }
+            .clearfix {
+                clear: both;
+            }
+            .fix-height {
+                height: 10px;
             }
         </style>
     </head>
@@ -105,7 +122,10 @@
                 </div>
                 <div class="group">
                     <button type="submit" class="btn">Sumit The Form</button>
+                    <button type="reset" class="btn-reset">Reset</button>
                 </div>
+                <div class="clearfix"></div>
+                <div class="fix-height"></div>
             </form>
         </div>
     </body>
