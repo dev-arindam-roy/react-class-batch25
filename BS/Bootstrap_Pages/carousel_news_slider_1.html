@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>carousel news slider 1 - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body { padding-top: 50px; }
+ 
+/*#####################
+Additional Styles (required)
+######################*/
+.carousel-indicators {
+    bottom:-40px;
+	left:0;
+	width:100%;
+	background:#ccc;
+	padding: 6px 0px;
+	margin-left:0;
+	border-top:2px solid #fff;
+}
+.carousel-indicators li {
+	width:12px;
+	height:12px;	
+	background:#fff;
+	border-color:#fff;
+ 
+}
+.carousel-indicators .active {
+	width:14px;
+	height:14px;
+	background:#428bca;
+	border-color:#428bca;
+}
+.carousel-inner .thumbnail {
+	margin-bottom:0;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+}
+.carousel-inner .caption {
+	background:#ddd;
+	padding: 10px;
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+    	<div class="col-md-4">
+            <!-- Carousel
+            ================================================== -->
+            <div id="myCarousel" class="carousel slide">        
+                <div class="carousel-inner">           
+                    <div class="item active"> 
+                    	<a href="#"><img class="thumbnail" src="http://placehold.it/600x400/" alt="Slide1"></a>
+                        
+                    </div>
+                    <div class="item"> 
+                    	<a href="#"><img class="thumbnail" src="http://placehold.it/600x400/" alt="Slide2"></a>
+                                                                                   
+                     </div>  
+                    <div class="item"> 
+                    	<a href="#"><img class="thumbnail" src="http://placehold.it/600x400/" alt="Slide3"></a>
+                                               
+                    </div>                                                                                   
+                </div>
+                 <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>                                                                 
+            </div><!-- End Carousel -->  
+    	</div>
+    </div>
+</div>
+<script type="text/javascript">
+$('#myCarousel').carousel({
+    	interval:   2000
+	});
+</script>
+</body>
+</html>

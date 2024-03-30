@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Pixels - Next or Back - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.tab .nav-tabs{
+    position: relative;
+    border-bottom: none;
+}
+.tab .nav-tabs li{
+    margin: 0 41px 0 0;
+    z-index: 1;
+}
+.tab .nav-tabs li:after{
+    content: "";
+    width: 50%;
+    border: 3px solid #ed5a46;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    z-index: -1;
+}
+.tab .nav-tabs li:last-child:after{
+    border: none;
+}
+.tab .nav-tabs li a{
+    display: block;
+    width: 120px;
+    height: 120px;
+    line-height: 115px;
+    border-radius: 50%;
+    background: #e9dcbb;
+    font-size: 20px;
+    color: #ea1c24;
+    padding: 0;
+    margin-right: 0;
+    text-align: center;
+    border: 5px solid #ed5a46;
+}
+.tab .nav-tabs li.active a{
+    background: #6c6c6c;
+    color: #e9dcbb;
+    border: 5px solid #ed5a46;
+    position: relative;
+}
+.tab .nav-tabs li.active a:after{
+    content: "\f107";
+    font-family: fontawesome;
+    font-size: 40px;
+    color: #ed5a46;
+    position: absolute;
+    bottom: -83px;
+    left: 38%;
+}
+.tab .tab-content{
+    font-size: 14px;
+    color: #e9dcbb;
+    line-height: 26px;
+    background: #6c6c6c;
+    padding: 20px 30px;
+    margin-top: 50px;
+}
+.tab .tab-content h3{
+    font-size: 24px;
+    color: #e9dcbb;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 767px){
+    .tab .nav-tabs li{ margin: 0 25px 0 0; }
+    .tab .nav-tabs li a{
+        width: 90px;
+        height: 90px;
+        line-height: 85px;
+        font-size: 15px;
+    }
+    .tab .nav-tabs li.active a:after{
+        font-size: 30px;
+        bottom: -63px;
+    }
+    .tab .tab-content{ margin-top: 40px; }
+}
+@media only screen and (max-width: 480px){
+    .tab .nav-tabs li{ margin-bottom: 3px; }
+    .tab .nav-tabs li:after{ border: none; }
+    .tab .nav-tabs li.active a:after{ content: ""; }
+    .tab .tab-content{ margin-top: 10px; }
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="tab" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Section 1</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Section 2</a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Section 3</a></li>
+                    <li role="presentation"><a href="#Section4" aria-controls="messages" role="tab" data-toggle="tab">Section 4</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                        <h3>Section 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <h3>Section 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                        <h3>Section 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section4">
+                        <h3>Section 4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</script>
+</body>
+</html>

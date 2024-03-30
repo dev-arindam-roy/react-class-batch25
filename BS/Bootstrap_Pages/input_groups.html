@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>INput Groups - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+    <div class="ui-app-bar" id="memberSpace-appBar">
+      <h2 action="toggleNav" class="ng-binding"><i id="memberSpace-navToggle" action="toggleNav" class="fa fa-chevron-left"></i>Social Links</h2>
+    </div>
+    <!-- uiView:  --><div ui-view="" id="memberSpace-content" class="ng-scope"><div class="form form-horizontal ng-scope">
+  <fieldset>
+    <legend>Tell us where we can find you on the web</legend>
+  <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+        <input type="text" class="form-control ng-pristine ng-valid" placeholder="website url" ng-model="memberData.website">
+  </div>
+
+  <hr>
+  
+  <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i> </span>
+      <input type="text" class="form-control ng-pristine ng-valid" placeholder="Facebook id" ng-model="memberData.facebook">
+  </div>
+  <hr>
+
+  <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-twitter"></i> http://twitter.com/</span>
+        <input type="text" class="form-control ng-pristine ng-valid" placeholder="Twitter id" ng-model="memberData.twitter">
+  </div>
+  <hr>
+
+  <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-instagram"></i> http://instagram.com/</span>
+        <input type="text" class="form-control ng-pristine ng-valid" placeholder="Instagram id" ng-model="memberData.instagram">
+  </div>
+  <hr>
+
+  <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-soundcloud"></i> https://soundcloud.com/</span>
+        <input type="text" class="form-control ng-pristine ng-valid" placeholder="Soundcloud id" ng-model="memberData.soundcloud">
+  </div>
+
+
+  </fieldset>
+
+</div>
+</div>
+    <!-- <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 member-sidebar" > -->
+    <div class="member-sidebar">
+      <hr>
+      <div class="form form-horizontal">
+           <div class="form-group">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div ng-show="mForm.$invalid" class="alert alert-danger ng-hide">Please Re-Check Form</div>
+              <button ng-show="ui.updating" class="btn btn-yellow form-control ng-hide">updating <i class="fa fa-spinner fa-spin"></i></button>
+              <button ng-click="updateMember()" ng-hide="ui.updating||mForm.$invalid" class="btn btn-yellow form-control">Update Settings</button>
+              <button ng-show="mForm.$invalid" class="btn btn-yellow form-control ng-hide" disabled="">Update Settings</button>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+<script type="text/javascript">
+ <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</script>
+</body>
+</html>
