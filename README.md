@@ -97,3 +97,11 @@ console.log(z[1]);
 console.log(z[2]);
 ```
 
+```javascript
+let arr = ["bat", "ball", "car", "bike", "laptop", "gun", "music"];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(`Array position ${i} = ${arr[i]}`);
+}
+```
+
