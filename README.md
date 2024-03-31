@@ -79,3 +79,21 @@ const fun2 = (p1, p2) => {
 console.log(fun2(3, 8));
 ```
 
+```javascript
+let x = [];
+
+console.log(x);
+console.log(x.length);
+console.log(typeof x);
+
+let z = ['bat', 'ball', 'car'];
+
+console.log(z);
+console.log(z.length);
+console.log(typeof z);
+
+console.log(z[0]);
+console.log(z[1]);
+console.log(z[2]);
+```
+
