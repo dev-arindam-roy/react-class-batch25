@@ -159,3 +159,17 @@ x.pop();
 console.log(x);
 ```
 
+```javascript
+let arrx = ["bat", "ball", "book"];
+
+console.log(arrx);
+
+delete(arrx[1]);
+
+console.log(arrx);
+
+arrx[1] = "car";
+
+console.log(arrx);
+```
+
