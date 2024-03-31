@@ -117,3 +117,23 @@ arr.forEach((value) => {
 });
 ```
 
+```javascript
+let x = [];
+
+x.push("bat");
+x.push("ball");
+x.push("car");
+x.push("book");
+x.push("food");
+
+console.log(x);
+
+let num = [];
+
+for (let i = 1; i <= 100; i++) {
+  num.push(i);
+}
+
+console.log(num);
+```
+
