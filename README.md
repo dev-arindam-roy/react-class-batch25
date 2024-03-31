@@ -105,3 +105,15 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
+```javascript
+let arr = ["bat", "ball", "car", "bike", "laptop", "gun", "music"];
+
+arr.forEach((value, index) => {
+  console.log(`${index} have ${value}`);
+});
+
+arr.forEach((value) => {
+  console.log(`${value}`);
+});
+```
+
