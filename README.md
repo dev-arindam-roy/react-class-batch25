@@ -137,3 +137,25 @@ for (let i = 1; i <= 100; i++) {
 console.log(num);
 ```
 
+```javascript
+//LIFO
+
+let x = [];
+
+x.push("bat");
+x.push("ball");
+x.push("car");
+x.push("book");
+x.push("food");
+
+console.log(x);
+
+x.pop();
+
+console.log(x);
+
+x.pop();
+
+console.log(x);
+```
+
