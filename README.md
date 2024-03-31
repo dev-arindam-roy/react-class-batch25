@@ -1,4 +1,4 @@
-
+```javascript
 /**
 
 JS Entry point:
@@ -30,4 +30,5 @@ var z = 56;
 z = 90;
 
 console.log(z);
+```
 
