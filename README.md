@@ -204,3 +204,19 @@ let str2 = x.join("-");
 console.log(str2);
 ```
 
+```javascript
+var yourName = "Amit Kumar Srivastav";
+
+console.log(yourName);
+
+let arr = yourName.split(" ");
+
+console.log(arr);
+
+console.log(typeof yourName);
+console.log(typeof arr);
+
+console.log(yourName.length);
+console.log(arr.length);
+```
+
