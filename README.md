@@ -173,3 +173,20 @@ arrx[1] = "car";
 console.log(arrx);
 ```
 
+```javascript
+let arrx = ["bat", "ball", "book"];
+
+delete(arrx[1]);
+
+console.log(arrx);
+
+let arrx2 = [];
+arrx.forEach((value) => {
+  if (value) {
+    arrx2.push(value);
+  }
+});
+
+console.log(arrx2);
+```
+
