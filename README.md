@@ -63,3 +63,19 @@ console.log(fun4(100, 5, 7));
 
 ```
 
+```javascript
+// ES6 == Ecma Script
+
+const fun1 = () => {
+  return "Hello User";
+}
+
+console.log(fun1());
+
+const fun2 = (p1, p2) => {
+  return `Your Multipication is ${p1 * p2}`;
+}
+
+console.log(fun2(3, 8));
+```
+
