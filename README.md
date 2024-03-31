@@ -190,3 +190,17 @@ arrx.forEach((value) => {
 console.log(arrx2);
 ```
 
+```javascript
+let x = ["hello", "user", "Sayan", "!"];
+
+console.log(x);
+
+let str = x.join(" ");
+
+console.log(str);
+
+let str2 = x.join("-");
+
+console.log(str2);
+```
+
