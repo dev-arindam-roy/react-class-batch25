@@ -32,3 +32,34 @@ z = 90;
 console.log(z);
 ```
 
+```javascript
+function fun1() {
+  return 'Hello, User';
+}
+
+console.log(fun1());
+
+function fun2(para1){
+  return "Ok, your parameter is " + para1;
+}
+
+console.log(fun2(12));
+console.log(fun2(14));
+console.log(fun2(16));
+console.log(fun2(22));
+
+function fun3(x, y) {
+  return x * y;
+}
+
+console.log(fun3(4, 5));
+
+function fun4(amount, time, rate) {
+  let x = ((amount * time * rate) / 100).toFixed(2);
+  return `Your total intarest is ${x}`;
+}
+
+console.log(fun4(100, 5, 7));
+
+```
+
