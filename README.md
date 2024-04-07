@@ -220,3 +220,16 @@ console.log(yourName.length);
 console.log(arr.length);
 ```
 
+```js
+function x1(para) {
+  let x = 10;
+  if (para == 25) {
+    let x = 25;
+    console.log(x);
+  }
+  console.log(x);
+}
+
+x1(25);
+```
+
