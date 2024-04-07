@@ -353,3 +353,14 @@ obj2.map((singleObj, singleObjPosition) => {
 });
 ```
 
+```js
+const filterUsers = obj2.map((obj, pos) => {
+  if (obj.id == 5 || obj.id == 2) {
+    console.log("id = " + obj.id)
+    console.log("name = " + obj.name)
+    console.log("email = " + obj.email);
+    console.log("==============================");
+  }
+});
+```
+
