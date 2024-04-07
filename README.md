@@ -364,3 +364,13 @@ const filterUsers = obj2.map((obj, pos) => {
 });
 ```
 
+```js
+const users = obj2.filter((obj) => {
+  return (obj.id == 2 || obj.id == 5) ? obj : null;
+});
+console.log(users);
+
+const users = obj2.filter((obj) => (obj.id == 2 || obj.id == 5) ? obj : null );
+console.log(users);
+```
+
