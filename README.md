@@ -233,3 +233,50 @@ function x1(para) {
 x1(25);
 ```
 
+```js
+let obj1 = {
+  item1: "bat",
+  item2: "ball",
+  item3: "car",
+  item4: "plane"
+};
+
+console.log(obj1);
+console.log(Object.keys(obj1));
+console.log(Object.values(obj1));
+console.log(Object.keys(obj1).length);
+console.log(Object.values(obj1).length);
+
+if (Object.keys(obj1).length > 0) {
+  console.log("Yes, is not empty");
+} else {
+  console.log("Yes, is empty");
+}
+
+if (obj1.item20) {
+  console.log("Yes, item3 is avaliable in the object");
+} else {
+  console.log("No, item3 is no avaliable in the object");
+}
+
+if (obj1.hasOwnProperty('item20')) {
+    console.log("Yes, item2 is avaliable in the object");
+} else {
+  console.log("NO, item2 is not avaliable in the object");
+}
+
+console.log(obj1);
+
+delete obj1.item2;
+
+console.log(obj1);
+
+if (obj1.hasOwnProperty('item3')) {
+    delete obj1.item3;
+} else {
+  console.log("item3 not found in the object set");
+}
+
+console.log(obj1);
+```
+
