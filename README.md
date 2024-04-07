@@ -341,3 +341,15 @@ for (let i = 0; i < obj2.length; i++) {
 obj2.map((singleObj) => { console.log(`ID: ${singleObj.id} | Email: ${singleObj.email} | Name: ${singleObj.name}`)});
 ```
 
+```js
+obj2.filter((singleObj, singleObjPosition) => {
+  console.log(`Array position ${singleObjPosition}`);
+  console.log(singleObj.email);
+});
+
+obj2.map((singleObj, singleObjPosition) => {
+  console.log(`Array position ${singleObjPosition}`);
+  console.log(singleObj.id);
+});
+```
+
