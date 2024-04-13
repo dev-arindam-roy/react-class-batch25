@@ -394,4 +394,28 @@ console.log(`My Name is ${obj.name} and my age is ${obj.age} years`);
 
 console.log('My Name is ' + obj.name + 'and my age is ' + obj.age + ' years');
 ```
+```js
+function fun1(val) {
+  let x = 20;
+  
+  if (val == 30) {
+    let x = 50;
+    console.log(x);
+  }
+  
+  if (val == 90) {
+    let x = 70;
+    console.log(x);
+  }
+  
+  if (val == 100) {
+    let x = 500;
+    console.log(x);
+  }
+  
+  console.log(x);
+}
+
+fun1(30);
+```
 
