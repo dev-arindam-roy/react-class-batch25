@@ -419,3 +419,16 @@ function fun1(val) {
 fun1(30);
 ```
 
+```js
+let arr = [1,2,3,4];
+
+arr.push(5);
+arr.push(6);
+
+console.log(arr);
+
+arr = [...arr, 10, 12];
+
+console.log(arr);
+```
+
