@@ -460,3 +460,16 @@ if (x.hasOwnProperty('age')) {
 console.log(x);
 ```
 
+```js
+const str = 'abcdefghijklmnopqrstuvwxyz';
+
+console.log(str.substr(0, 5));
+console.log(str.slice(0, 5));
+
+console.log(str.substr(3, 5));
+console.log(str.slice(3, 3 + 5));
+
+console.log(str.substr(str.length - 4, 4));
+console.log(str.slice(str.length - 4, (str.length - 4) + 4));
+```
+
