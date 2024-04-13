@@ -373,4 +373,13 @@ console.log(users);
 const users = obj2.filter((obj) => (obj.id == 2 || obj.id == 5) ? obj : null );
 console.log(users);
 ```
+```js
+let name = 'Arindam';
+let age = 24;
+let company = 'TCS'
+
+console.log('Hi, I am ' + name + ', and my age is = ' + age + ' and i am working in ' + company);
+
+console.log(`Hi, I am ${name}, and my age is = ${age} and i am working in ${company}`);
+```
 
