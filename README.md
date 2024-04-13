@@ -431,4 +431,32 @@ arr = [...arr, 10, 12];
 
 console.log(arr);
 ```
+```js
+let obj = {
+  
+  firstName: 'Arindam',
+  lastName: 'Roy',
+  age: 36,
+  skill: ["laravel", "react", "vue"],
+  companies: [
+    {name: "TCS", salary: 60000},
+    {name: "CTS", salary: 70000},
+    {name: "PWC", salary: 80000}
+  ]
+}
+
+let x = {
+  ...obj, 
+  lastName: 'Sen', 
+  age: 67,
+  skill: [...obj.skill, "MongoDB", "MySQL"],
+  companies: [...obj.companies, {name: "Capgimini", salary: 120000}]
+}
+
+if (x.hasOwnProperty('age')) {
+  delete x.age
+}
+
+console.log(x);
+```
 
