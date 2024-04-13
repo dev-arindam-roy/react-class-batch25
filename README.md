@@ -383,12 +383,15 @@ console.log('Hi, I am ' + name + ', and my age is = ' + age + ' and i am working
 console.log(`Hi, I am ${name}, and my age is = ${age} and i am working in ${company}`);
 ```
 ```js
-let name = 'Arindam';
-let age = 24;
-let company = 'TCS'
+let obj = {
+  name: 'Arindam Roy',
+  age: 36,
+  skill: 'Laravel + React',
+  company: 'TCS'
+}
 
-console.log('Hi, I am ' + name + ', and my age is = ' + age + ' and i am working in ' + company);
+console.log(`My Name is ${obj.name} and my age is ${obj.age} years`);
 
-console.log(`Hi, I am ${name}, and my age is = ${age} and i am working in ${company}`);
+console.log('My Name is ' + obj.name + 'and my age is ' + obj.age + ' years');
 ```
 
