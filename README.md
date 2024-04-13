@@ -382,4 +382,13 @@ console.log('Hi, I am ' + name + ', and my age is = ' + age + ' and i am working
 
 console.log(`Hi, I am ${name}, and my age is = ${age} and i am working in ${company}`);
 ```
+```js
+let name = 'Arindam';
+let age = 24;
+let company = 'TCS'
+
+console.log('Hi, I am ' + name + ', and my age is = ' + age + ' and i am working in ' + company);
+
+console.log(`Hi, I am ${name}, and my age is = ${age} and i am working in ${company}`);
+```
 
